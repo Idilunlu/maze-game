@@ -1,0 +1,23 @@
+#
+# Pin assignments for the Nexys3 Board.
+#
+net reset loc=B8; # Push-Button BTNS
+net vclk loc=V10; # 100 MHz board clock
+net vgavs loc=P7; # VGA-VSYNC
+net vgahs loc=N6; # VGA-HSYNC
+net vgar<0> loc=U7; # VGA-RED0
+net vgar<1> loc=V7; # VGA-RED1
+net vgar<2> loc=N7; # VGA-RED2
+net vgag<0> loc=P8; # VGA-GRN0
+net vgag<1> loc=T6; # VGA-GRN1
+net vgag<2> loc=V6; # VGA-GRN2
+net vgab<0> loc=R7; # VGA-BLU1
+net vgab<1> loc=T7; # VGA-BLU2
+
+Net VL LOC=C4 | IOSTANDARD=LVCMOS33; # Slide switch5
+
+Net VD LOC=C9 | IOSTANDARD=LVCMOS33; # Slide switch2
+
+Net VU LOC=A8 | IOSTANDARD=LVCMOS33; # Slide switch3
+
+Net VR LOC=D9 | IOSTANDARD=LVCMOS33; # Slide switch2
